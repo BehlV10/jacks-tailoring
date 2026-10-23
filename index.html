@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack's Tailoring & Dry Cleaning | Master Tailor & Bespoke Alterations | Cambridge, MA</title>
+  <meta name="description" content="Master Tailor Jack Papazian has served Cambridge and Boston since 1986. Uncompromising bespoke tailoring, precision suit alterations, leather repair, bridal wear, and organic dry cleaning. The man who measures you is the man who does the work." />
+  <meta name="keywords" content="Jack's Tailoring Cambridge, master tailor Boston, suit alterations Cambridge, leather jacket repair, bespoke tailoring Porter Square, wedding gown alterations Mass Ave" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Jack's Tailoring & Dry Cleaning | Cambridge, MA" />
+  <meta property="og:description" content="Artisan bespoke tailoring and alterations in Porter Square since 1986. All work done in-house by Master Tailor Jack Papazian." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jackstailoring.com" />
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0c131f',
+              dark: '#141d2d',
+              card: '#1b2538',
+              gold: '#c9a050',
+              goldHover: '#b3893c',
+              goldLight: '#e4caa0',
+              cream: '#faf8f5',
+              sand: '#f2ece4',
+              muted: '#8e9aa8',
+              border: 'rgba(201, 160, 80, 0.25)',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    /* Custom styling for luxury touch */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f3d79b 0%, #c9a050 50%, #996e27 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, rgba(201,160,80,0.8), rgba(201,160,80,0.1)) 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #c9a050;
+      border-radius: 3px;
+    }
+  </style>
+
+  <!-- Schema.org Structured Data for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DryCleaningOrLaundry",
+    "name": "Jack's Tailoring & Dry Cleaning",
+    "image": "https://jackstailoring.com/images/hero.jpg",
+    "@id": "https://jackstailoring.com",
+    "url": "https://jackstailoring.com",
+    "telephone": "+16178688339",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1937 Massachusetts Ave",
+      "addressLocality": "Cambridge",
+      "addressRegion": "MA",
+      "postalCode": "02140",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.389868,
+      "longitude": -71.119652
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "$$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Jack Papazian"
+    }
+  }
+  </script>
+</head>
+<body class="bg-brand-navy text-slate-100 font-sans selection:bg-brand-gold selection:text-brand-navy antialiased min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-gold/15 border-b border-brand-gold/20 text-xs py-2 px-4 text-center tracking-wider text-brand-goldLight flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span><strong>ESTABLISHED 1986 IN CAMBRIDGE</strong> — Walk-ins welcome for consultations & alterations • Rush service available</span>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-50 bg-brand-navy/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo / Brand -->
+      <a href="#hero" class="flex flex-col group">
+        <span class="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-white group-hover:text-brand-gold transition">
+          JACK’S TAILORING
+        </span>
+        <span class="text-[10px] tracking-[0.28em] text-brand-gold uppercase font-medium">
+          & Dry Cleaning • Cambridge, MA
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+        <a href="#services" class="text-slate-300 hover:text-brand-gold transition">Services</a>
+        <a href="#craft" class="text-slate-300 hover:text-brand-gold transition">The Craft</a>
+        <a href="#about" class="text-slate-300 hover:text-brand-gold transition">Meet Jack</a>
+        <a href="#reviews" class="text-slate-300 hover:text-brand-gold transition">Reviews</a>
+        <a href="#hours" class="text-slate-300 hover:text-brand-gold transition">Hours & Location</a>
+      </nav>
+
+      <!-- Action Button & Phone -->
+      <div class="hidden lg:flex items-center space-x-5">
+        <a href="tel:6178688339" class="flex items-center gap-2 text-sm text-slate-200 hover:text-brand-gold transition group">
+          <div class="w-8 h-8 rounded-full bg-brand-dark border border-brand-gold/30 flex items-center justify-center text-brand-gold group-hover:scale-105 transition">
+            <i class="fa-solid fa-phone text-xs"></i>
+          </div>
+          <span class="font-semibold">(617) 868-8339</span>
+        </a>
+        <a href="#booking" class="bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-semibold px-5 py-2.5 rounded text-sm tracking-wider uppercase transition shadow-lg shadow-brand-gold/20">
+          Request Fitting
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Open navigation menu" class="md:hidden text-slate-200 hover:text-brand-gold text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden bg-brand-dark border-b border-brand-gold/20 px-6 py-6 space-y-4">
+      <a href="#services" class="block text-slate-200 hover:text-brand-gold font-medium py-1">Services & Alterations</a>
+      <a href="#craft" class="block text-slate-200 hover:text-brand-gold font-medium py-1">The Jack Difference</a>
+      <a href="#about" class="block text-slate-200 hover:text-brand-gold font-medium py-1">Meet Jack Papazian</a>
+      <a href="#reviews" class="block text-slate-200 hover:text-brand-gold font-medium py-1">Client Reviews</a>
+      <a href="#hours" class="block text-slate-200 hover:text-brand-gold font-medium py-1">Hours & Location</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <a href="tel:6178688339" class="w-full text-center py-2.5 rounded bg-brand-navy border border-brand-gold/40 text-brand-gold font-semibold text-sm">
+          <i class="fa-solid fa-phone mr-2"></i> Call (617) 868-8339
+        </a>
+        <a href="#booking" class="w-full text-center py-2.5 rounded bg-brand-gold text-brand-navy font-semibold text-sm tracking-wider uppercase">
+          Book a Fitting
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 lg:py-24">
+    <!-- Atmospheric Background with Sartorial Imagery -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=2000&q=80" 
+        alt="Bespoke tailoring suit fitting" 
+        class="w-full h-full object-cover object-center filter brightness-[0.28] contrast-125 scale-105"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-brand-navy/50 to-brand-navy"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <!-- Heritage Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-dark/90 border border-brand-gold/30 text-brand-gold text-xs tracking-widest uppercase mb-6 backdrop-blur">
+        <i class="fa-solid fa-certificate text-brand-gold text-xs"></i>
+        <span>Cambridge Landmark • Porter Square • Since 1986</span>
+      </div>
+
+      <!-- Hero Headline with Quote -->
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight sm:leading-[1.15] mb-6">
+        “The man who measures you is the man who does the work.”
+      </h1>
+
+      <!-- Supporting Editorial Subtext -->
+      <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-10">
+        For over 38 years at 1937 Massachusetts Avenue, Master Tailor <strong class="text-white font-medium">Jack Papazian</strong> has perfected garments with zero outsourcing. From bespoke suiting overhauls and delicate bridal gowns to artisan leather repairs, experience Boston's benchmark of master craftsmanship.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-bold text-sm tracking-widest uppercase transition duration-200 shadow-xl shadow-brand-gold/20 flex items-center justify-center gap-2">
+          <span>Request a Fitting</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="tel:6178688339" class="w-full sm:w-auto px-8 py-4 rounded bg-brand-dark/80 hover:bg-brand-dark border border-white/20 hover:border-brand-gold text-white font-semibold text-sm tracking-wider uppercase transition duration-200 backdrop-blur flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-brand-gold"></i>
+          <span>(617) 868-8339</span>
+        </a>
+      </div>
+
+      <!-- Proof Points / Trust Badges -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-8 border-t border-white/10 text-left">
+        <div class="flex items-center gap-3 p-3 rounded-lg bg-brand-dark/40 border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl text-brand-gold"><i class="fa-solid fa-scissors"></i></div>
+          <div>
+            <div class="text-lg font-bold text-white font-serif">40+ Years</div>
+            <div class="text-xs text-slate-400">Master Tailor Experience</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-lg bg-brand-dark/40 border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl text-brand-gold"><i class="fa-solid fa-house-chimney-user"></i></div>
+          <div>
+            <div class="text-lg font-bold text-white font-serif">100% In-House</div>
+            <div class="text-xs text-slate-400">Jack Does All Sewing</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-lg bg-brand-dark/40 border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl text-brand-gold"><i class="fa-solid fa-vest"></i></div>
+          <div>
+            <div class="text-lg font-bold text-white font-serif">Full-Service</div>
+            <div class="text-xs text-slate-400">Bespoke, Bridal & Leather</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-lg bg-brand-dark/40 border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl text-brand-gold"><i class="fa-solid fa-star"></i></div>
+          <div>
+            <div class="text-lg font-bold text-white font-serif">4.8 / 5.0</div>
+            <div class="text-xs text-slate-400">Top-Rated in Cambridge</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The Jack's Difference / Craftsmanship Philosophy -->
+  <section id="craft" class="py-20 bg-brand-dark relative border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">Uncompromising Standards</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2 mb-4">Why Jack's Stands Apart</h2>
+        <div class="w-16 h-0.5 bg-brand-gold mx-auto mb-6"></div>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Most modern alteration shops operate as drop-off counters that ship your valued clothing to third-party factories. At Jack's, every single pin is placed and every seam is restructured in-house by Jack Papazian.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="bg-brand-card p-8 rounded-xl border border-white/5 hover:border-brand-gold/40 transition duration-300 group">
+          <div class="w-14 h-14 rounded-full bg-brand-navy border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-white mb-3">Direct Master Touch</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Nothing is lost in translation. The craftsman listening to your preferences during the fitting is the exact person cutting the cloth and operating the machine.
+          </p>
+          <ul class="text-xs text-slate-400 space-x-2 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Tailored to your specific shoulder slope</li>
+            <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Balanced sleeve pitch & jacket silhouette</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-brand-card p-8 rounded-xl border border-white/5 hover:border-brand-gold/40 transition duration-300 group">
+          <div class="w-14 h-14 rounded-full bg-brand-navy border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-white mb-3">Honest Sartorial Advice</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Jack will never alter a garment just to charge a fee. If an off-the-rack piece cannot flatter your build or isn’t worth altering, he will tell you candidly.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Genuine body proportion evaluation</li>
+            <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Protects your investment in fine menswear & dresses</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-brand-card p-8 rounded-xl border border-white/5 hover:border-brand-gold/40 transition duration-300 group">
+          <div class="w-14 h-14 rounded-full bg-brand-navy border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-white mb-3">Rare Heavy-Material Skill</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            While most dry cleaners turn down leather, shearling, and heavy coats, Jack has four decades of specialized experience relining, resizing, and repairing luxury outerwear.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Leather jacket relining & zipper replacement</li>
+            <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Heavy wool topcoats & down restructuring</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Services Section -->
+  <section id="services" class="py-24 bg-brand-navy relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div>
+          <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">Sartorial Services</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2">Tailoring & Garment Care</h2>
+          <div class="w-16 h-0.5 bg-brand-gold mt-4"></div>
+        </div>
+        <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+          Whether you need a minor hem before the weekend or a full anatomical reconstruction of a bespoke suit, Jack provides master-level precision.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Suits & Jackets -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden border border-white/5 hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Suit Alterations" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+              <span class="absolute top-4 right-4 bg-brand-navy/80 backdrop-blur px-3 py-1 rounded text-xs font-medium text-brand-gold border border-brand-gold/30">
+                Signature Specialty
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Suits, Blazers & Tuxedos</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Full-spectrum suit overhaul. We sculpt off-the-rack garments into silhouettes that drape naturally with your shoulders and posture.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-6">
+                <li>• Jacket shoulder narrowing & collar roll removal</li>
+                <li>• Sleeve shortening/lengthening with working buttonholes</li>
+                <li>• Waist suppression & chest shaping</li>
+                <li>• Trouser seat, crotch, waist, and taper adjustments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between">
+            <span class="text-xs text-brand-gold font-medium">Fittings by Appointment or Walk-in</span>
+            <a href="#booking" class="text-xs uppercase font-bold text-white hover:text-brand-gold transition">Inquire &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Service 2: Leather & Heavy Outerwear -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden border border-white/5 hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80" alt="Leather Jacket Alterations" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+              <span class="absolute top-4 right-4 bg-brand-navy/80 backdrop-blur px-3 py-1 rounded text-xs font-medium text-brand-gold border border-brand-gold/30">
+                Rare Expertise
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Leather & Suede Outerwear</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Specialized craft equipment capable of working genuine leather, shearling, suede, and heavy coats without damaging skins.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-6">
+                <li>• Complete interior jacket relining (silk, satin, fleece)</li>
+                <li>• Heavy brass zipper replacement & slider repairs</li>
+                <li>• Sleeve shortening at wrist or shoulder</li>
+                <li>• Tear reconditioning & seam reinforcement</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between">
+            <span class="text-xs text-brand-gold font-medium">Full Restoration Available</span>
+            <a href="#booking" class="text-xs uppercase font-bold text-white hover:text-brand-gold transition">Inquire &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Service 3: Wedding, Bridal & Formal Wear -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden border border-white/5 hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding Gown Alterations" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Bridal & Formal Attire</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Delicate adjustments for brides, grooms, and bridal parties. Handling intricate lace, boning, tulle, beading, and silk.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-6">
+                <li>• Wedding dress hems & American/French bustles</li>
+                <li>• Bodice taking in, letting out, and bra-cup insertion</li>
+                <li>• Groom tuxedo custom fit & satin lapel care</li>
+                <li>• Bridesmaid & mother-of-the-bride gowns</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between">
+            <span class="text-xs text-brand-gold font-medium">Please bring wedding shoes</span>
+            <a href="#booking" class="text-xs uppercase font-bold text-white hover:text-brand-gold transition">Inquire &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Service 4: Shirts, Denim & Everyday -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden border border-white/5 hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80" alt="Shirt & Denim Hemming" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Pants, Denim & Shirts</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Crisp everyday alterations executed with master precision. Keep original factory finishes intact.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-6">
+                <li>• Jeans hemming with original hem reattachment</li>
+                <li>• Dress trouser blind-stitch hem or classic cuffs</li>
+                <li>• Dress shirt sleeve shortening & side darting</li>
+                <li>• Skirt and dress shortening & zipper repairs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between">
+            <span class="text-xs text-brand-gold font-medium">Prompt Turnaround Available</span>
+            <a href="#booking" class="text-xs uppercase font-bold text-white hover:text-brand-gold transition">Inquire &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Service 5: Bespoke & Custom Tailoring -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden border border-white/5 hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1598808503746-f34c53b9323e?auto=format&fit=crop&w=800&q=80" alt="Bespoke Suits" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Bespoke Suiting & Shirts</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Constructed from scratch. True custom-measured clothing designed around your unique anatomy, preference, and lifestyle.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-6">
+                <li>• Over 30 individual anatomical measurements</li>
+                <li>• Hand-basted canvas fittings</li>
+                <li>• Premium English & Italian wools and cashmeres</li>
+                <li>• Monogramming and custom inner linings</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between">
+            <span class="text-xs text-brand-gold font-medium">Consultation Required</span>
+            <a href="#booking" class="text-xs uppercase font-bold text-white hover:text-brand-gold transition">Inquire &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Service 6: Organic Dry Cleaning & Hand Pressing -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden border border-white/5 hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=800&q=80" alt="Dry Cleaning" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Dry Cleaning & Hand Pressing</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Gentle, eco-conscious cleaning process tailored to protect delicate wool fibers, cashmere, silks, and custom garment construction.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-6">
+                <li>• Master hand pressing for lapel roll and trouser creases</li>
+                <li>• Gentle stain removal and odor extraction</li>
+                <li>• Wedding dress cleaning & archival preservation boxing</li>
+                <li>• Drop-off dry cleaning with alteration pairings</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between">
+            <span class="text-xs text-brand-gold font-medium">Weekly Drop-Offs Welcome</span>
+            <a href="#booking" class="text-xs uppercase font-bold text-white hover:text-brand-gold transition">Inquire &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Meet Jack Papazian Section -->
+  <section id="about" class="py-24 bg-brand-dark border-t border-white/5 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Image & Badge -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden border border-brand-gold/30 shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=1000&q=80" 
+              alt="Master Tailor at work" 
+              class="w-full h-[500px] object-cover object-top filter contrast-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-brand-navy/90 backdrop-blur border border-brand-gold/30">
+              <p class="font-serif text-lg font-bold text-white">Jack Papazian</p>
+              <p class="text-xs text-brand-gold tracking-widest uppercase">Master Tailor & Proprietor • Since 1986</p>
+            </div>
+          </div>
+          <!-- Decorative Stamp -->
+          <div class="hidden sm:block absolute -top-5 -left-5 bg-brand-gold text-brand-navy font-bold text-xs uppercase tracking-wider py-2 px-4 rounded shadow-lg">
+            38+ Years at 1937 Mass Ave
+          </div>
+        </div>
+
+        <!-- Right: Story & Philosophy -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">The Master Craftsman</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2 mb-6">
+            A Lifetime Dedicated to the Art of Fit
+          </h2>
+          
+          <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              When Jack Papazian opened his doors at <strong class="text-white">1937 Massachusetts Avenue</strong> in 1986, Porter Square was very different, but his philosophy has never wavered: <em class="text-brand-goldLight font-serif">true tailoring is an individual craft, not an assembly line</em>.
+            </p>
+            <p>
+              With more than <strong class="text-white">40 years of hands-on tailoring experience</strong>, Jack has earned a revered reputation among Boston business executives, Harvard and MIT academics, style enthusiasts, and couples preparing for their wedding day.
+            </p>
+            <blockquote class="my-6 pl-4 border-l-2 border-brand-gold italic text-white/90 font-serif text-lg">
+              “Unlike shops where an attendant pins your garment and hands it to a back room or an outside factory, I cut and sew every piece myself. You see the person doing the work, and I stand behind every stitch.”
+            </blockquote>
+            <p>
+              Known for his direct and honest advice, Jack will tell you frankly what can and cannot be done with a silhouette. He treats your wardrobe with the same care and discernment as his own.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap gap-8 text-slate-300">
+            <div>
+              <div class="font-serif text-2xl font-bold text-white">1986</div>
+              <div class="text-xs text-slate-400">Established in Cambridge</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl font-bold text-white">100%</div>
+              <div class="text-xs text-slate-400">In-House Production</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl font-bold text-white">Multi-Award</div>
+              <div class="text-xs text-slate-400">Readers' Choice Winner</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Customer Reviews & Acclaim -->
+  <section id="reviews" class="py-24 bg-brand-navy relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">Authentic Reputation</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2 mb-4">What Our Clients Say</h2>
+        <div class="w-16 h-0.5 bg-brand-gold mx-auto mb-6"></div>
+        <p class="text-slate-300 text-sm sm:text-base">
+          From sartorial discussions on Styleforum and Reddit to decades of 5-star Yelp and Google reviews, Bostonians know where to turn when precision matters.
+        </p>
+      </div>
+
+      <!-- Testimonial Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Review 1: Styleforum / High-End Suiting -->
+        <div class="bg-brand-dark p-7 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brand-gold/40 transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium px-2 py-0.5 rounded bg-brand-card">Styleforum Review</span>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+              “Jack is the only tailor in the Boston/Cambridge area I trust with my high-end canvases. He completely restructured the jacket back, slimmed the sleeves, and tapered the trousers. He turned an off-the-rack suit into a bespoke fit. Absolutely worth the price.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-xs">
+              DM
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">David M.</p>
+              <p class="text-[11px] text-slate-400">Menswear Collector • Cambridge, MA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Yelp / Honest Advice -->
+        <div class="bg-brand-dark p-7 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brand-gold/40 transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium px-2 py-0.5 rounded bg-brand-card">Yelp Review</span>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+              “Jack is the most honest craftsman I’ve ever met. I brought in a coat that I thought needed to be altered, and he looked at me and said, ‘This fits you well naturally, do not spend money on this.’ That kind of integrity is almost impossible to find today.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-xs">
+              SK
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">Sarah K.</p>
+              <p class="text-[11px] text-slate-400">Somerville, MA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Leather Jacket Restoration -->
+        <div class="bg-brand-dark p-7 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brand-gold/40 transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium px-2 py-0.5 rounded bg-brand-card">Google Review</span>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+              “Brought in a vintage 1980s leather motorcycle jacket that had a ripped satin lining and a busted heavy zipper. Jack relined it completely in silk-finish satin and installed an industrial brass zipper. The stitching was cleaner than the original factory work.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-xs">
+              MT
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">Marcus T.</p>
+              <p class="text-[11px] text-slate-400">Boston, MA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4: Wedding / Formal Wear -->
+        <div class="bg-brand-dark p-7 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brand-gold/40 transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium px-2 py-0.5 rounded bg-brand-card">Google Review</span>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+              “Jack altered my wedding tuxedo on short notice after another shop botched the shoulder line. He calmed me down, pinned it perfectly, and when I tried it on a week later, it was like a second skin. My wife and I both swear by him now.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-xs">
+              JR
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">Julian & Elena R.</p>
+              <p class="text-[11px] text-slate-400">Harvard Square • Cambridge</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5: Denim & Daily Alterations -->
+        <div class="bg-brand-dark p-7 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brand-gold/40 transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium px-2 py-0.5 rounded bg-brand-card">Reddit /r/boston</span>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+              “Whenever someone in Cambridge asks for a real tailor on Reddit, Jack is always the top answer. He does original hems on raw denim and his turnaround has always been reliable. He’s an old-school artisan in the best possible way.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-xs">
+              BL
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">Brian L.</p>
+              <p class="text-[11px] text-slate-400">Porter Square Local</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6: 20-Year Repeat Customer -->
+        <div class="bg-brand-dark p-7 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brand-gold/40 transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium px-2 py-0.5 rounded bg-brand-card">Verified Patron</span>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+              “I’ve been bringing my suits, blazers, and winter coats to Jack for over twenty years. He remembers how I like my trouser break and always delivers immaculate work. He is an essential treasure of Massachusetts Avenue.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-xs">
+              AG
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">Arthur G., Esq.</p>
+              <p class="text-[11px] text-slate-400">Patron Since 2002</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fitting Guidelines & Booking / Consultation Form -->
+  <section id="booking" class="py-24 bg-brand-dark border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Fitting Advice & What to Bring -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">Preparation & Advice</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1 mb-4">
+              Preparing for Your Fitting
+            </h2>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              To achieve an uncompromising fit, precision during measurement is critical. Here is what Jack recommends bringing to your appointment:
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-3 p-4 rounded-lg bg-brand-navy border border-white/5">
+              <div class="text-brand-gold mt-1 text-base"><i class="fa-solid fa-shoe-prints"></i></div>
+              <div>
+                <h4 class="text-sm font-semibold text-white">Appropriate Footwear</h4>
+                <p class="text-xs text-slate-400 mt-1">Bring the dress shoes, boots, or heels you plan to wear. Trouser breaks and dress hems vary significantly by heel height.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-4 rounded-lg bg-brand-navy border border-white/5">
+              <div class="text-brand-gold mt-1 text-base"><i class="fa-solid fa-shirt"></i></div>
+              <div>
+                <h4 class="text-sm font-semibold text-white">Undergarments & Shirts</h4>
+                <p class="text-xs text-slate-400 mt-1">For suit jackets, wear a proper dress shirt with collar. For wedding dresses, bring the specific foundation wear or bra cups you intend to use.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-4 rounded-lg bg-brand-navy border border-white/5">
+              <div class="text-brand-gold mt-1 text-base"><i class="fa-solid fa-stopwatch"></i></div>
+              <div>
+                <h4 class="text-sm font-semibold text-white">Turnaround Times</h4>
+                <p class="text-xs text-slate-400 mt-1">Standard alterations typically take 7–10 days. For urgent events, call Jack directly at (617) 868-8339 to arrange expedited service.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-lg bg-brand-gold/10 border border-brand-gold/30 text-xs text-brand-goldLight">
+            <strong class="text-white block mb-1"><i class="fa-solid fa-circle-info mr-1"></i> Walk-ins Welcome:</strong>
+            You are always welcome to bring your garments directly to our 1937 Mass Ave shop during regular business hours without prior appointment.
+          </div>
+        </div>
+
+        <!-- Right: Interactive Consultation Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-brand-card p-8 sm:p-10 rounded-2xl border border-white/10 shadow-2xl relative">
+            
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">Request a Fitting or Estimate</h3>
+            <p class="text-xs sm:text-sm text-slate-300 mb-6">
+              Tell us about your garment. Jack will review your request and confirm a fitting time or quote details.
+            </p>
+
+            <form id="fittingForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Your Name *</label>
+                  <input 
+                    type="text" 
+                    required 
+                    placeholder="e.g. Alexander Hamilton"
+                    class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-white text-sm focus:outline-none focus:border-brand-gold transition"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Phone Number *</label>
+                  <input 
+                    type="tel" 
+                    required 
+                    placeholder="(617) 000-0000"
+                    class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-white text-sm focus:outline-none focus:border-brand-gold transition"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Email Address</label>
+                  <input 
+                    type="email" 
+                    placeholder="alex@example.com"
+                    class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-white text-sm focus:outline-none focus:border-brand-gold transition"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Garment / Service Type</label>
+                  <select class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-white text-sm focus:outline-none focus:border-brand-gold transition">
+                    <option value="suit">Men's / Women's Suit or Blazer</option>
+                    <option value="leather">Leather Jacket Relining / Repair</option>
+                    <option value="bridal">Wedding Dress or Bridal Party Gown</option>
+                    <option value="tuxedo">Tuxedo Alteration</option>
+                    <option value="pants">Trousers / Jeans (Hem or Taper)</option>
+                    <option value="bespoke">Custom / Bespoke Commission</option>
+                    <option value="drycleaning">Organic Dry Cleaning & Pressing</option>
+                    <option value="other">Other / Multiple Items</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Target Completion Date (Optional)</label>
+                  <input 
+                    type="date" 
+                    class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-slate-300 text-sm focus:outline-none focus:border-brand-gold transition"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Preferred Time to Visit</label>
+                  <select class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-white text-sm focus:outline-none focus:border-brand-gold transition">
+                    <option value="morning">Morning (9:00 AM – 12:00 PM)</option>
+                    <option value="afternoon">Early Afternoon (12:00 PM – 3:00 PM)</option>
+                    <option value="late">Late Afternoon (3:00 PM – 6:00 PM)</option>
+                    <option value="asap">As soon as possible (Rush)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-slate-300 font-semibold mb-1.5">Details or Specific Needs</label>
+                <textarea 
+                  rows="3" 
+                  placeholder="Describe your garment, brand, or fit adjustments (e.g., Brooks Brothers suit jacket sleeves and waist, wedding date in 3 weeks, leather jacket zipper stuck)..."
+                  class="w-full px-4 py-3 rounded bg-brand-navy border border-white/10 text-white text-sm focus:outline-none focus:border-brand-gold transition"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                class="w-full py-4 rounded bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-bold text-sm tracking-widest uppercase transition duration-200 shadow-xl shadow-brand-gold/20 flex items-center justify-center gap-2"
+              >
+                <span>Submit Fitting Inquiry</span>
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+              </button>
+
+              <p class="text-[11px] text-center text-slate-400 mt-2">
+                Need urgent turnaround? Call Jack directly at <a href="tel:6178688339" class="text-brand-gold hover:underline font-semibold">(617) 868-8339</a>.
+              </p>
+            </form>
+
+            <!-- Success Message Toast (hidden by default) -->
+            <div id="formSuccess" class="hidden absolute inset-0 bg-brand-card/95 rounded-2xl flex flex-col items-center justify-center p-8 text-center backdrop-blur-md">
+              <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mb-4 border border-emerald-500/40">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h4 class="font-serif text-2xl font-bold text-white mb-2">Inquiry Received</h4>
+              <p class="text-sm text-slate-300 max-w-sm mb-6">
+                Thank you. Jack reviews every inquiry personally and will reach out promptly to confirm your consultation time and details.
+              </p>
+              <button onclick="resetForm()" class="px-6 py-2.5 rounded bg-brand-navy border border-brand-gold/40 text-brand-gold text-xs uppercase tracking-wider font-semibold hover:bg-brand-gold hover:text-brand-navy transition">
+                Send Another Request
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location, Map & Business Hours Section -->
+  <section id="hours" class="py-24 bg-brand-navy relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        
+        <!-- Store Information & Hours -->
+        <div class="lg:col-span-5 bg-brand-dark p-8 sm:p-10 rounded-2xl border border-white/5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">Visit Our Shop</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1 mb-4">Location & Hours</h2>
+            <div class="w-12 h-0.5 bg-brand-gold mb-6"></div>
+
+            <!-- Address Card -->
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-navy border border-brand-gold/30 flex items-center justify-center text-brand-gold flex-shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Address</h4>
+                  <p class="text-base text-white font-medium mt-0.5">1937 Massachusetts Avenue</p>
+                  <p class="text-sm text-slate-300">Cambridge, MA 02140</p>
+                  <p class="text-xs text-brand-goldLight mt-1"><i class="fa-solid fa-train-subway mr-1"></i> 2-min walk from Porter Square Station (Red Line & Commuter Rail)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-navy border border-brand-gold/30 flex items-center justify-center text-brand-gold flex-shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Telephone</h4>
+                  <a href="tel:6178688339" class="text-base text-brand-gold hover:underline font-bold mt-0.5 block">
+                    (617) 868-8339
+                  </a>
+                  <p class="text-xs text-slate-400">Direct line to Jack's workshop</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours Table with Dynamic Status -->
+            <div class="border-t border-white/10 pt-6">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-xs uppercase tracking-wider text-slate-300 font-bold">Hours of Operation</h4>
+                <div id="liveStatusBadge" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span>Open Today</span>
+                </div>
+              </div>
+
+              <div class="space-y-2 text-xs sm:text-sm">
+                <div class="flex justify-between py-1 border-b border-white/5 text-slate-300">
+                  <span>Monday – Friday</span>
+                  <span class="font-medium text-white">9:00 AM – 6:00 PM</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-white/5 text-slate-400">
+                  <span>Saturday</span>
+                  <span class="text-slate-400">By Appointment / Closed</span>
+                </div>
+                <div class="flex justify-between py-1 text-slate-400">
+                  <span>Sunday</span>
+                  <span class="text-slate-400">Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Directions CTAs -->
+          <div class="pt-8 flex flex-col sm:flex-row gap-3">
+            <a 
+              href="https://maps.google.com/?q=Jack's+Tailoring+1937+Massachusetts+Ave+Cambridge+MA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex-1 py-3 text-center rounded bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-bold text-xs uppercase tracking-wider transition shadow-lg"
+            >
+              <i class="fa-solid fa-diamond-turn-right mr-1.5"></i> Get Directions
+            </a>
+            <a 
+              href="tel:6178688339" 
+              class="flex-1 py-3 text-center rounded bg-brand-navy border border-white/20 hover:border-brand-gold text-white font-bold text-xs uppercase tracking-wider transition"
+            >
+              <i class="fa-solid fa-phone mr-1.5 text-brand-gold"></i> Call Shop
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Interactive Google Map Embed -->
+        <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative min-h-[400px]">
+          <iframe 
+            title="Jack's Tailoring Location Map"
+            src="https://maps.google.com/maps?q=1937%20Massachusetts%20Ave,%20Cambridge,%20MA%2002140&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full min-h-[450px] border-0 filter contrast-125"
+            loading="lazy" 
+            allowfullscreen>
+          </iframe>
+          <div class="absolute top-4 left-4 bg-brand-navy/90 backdrop-blur p-3 rounded-lg border border-brand-gold/30 text-xs shadow-xl hidden sm:block">
+            <span class="font-bold text-white block">Jack's Tailoring & Dry Cleaning</span>
+            <span class="text-slate-300">1937 Massachusetts Ave, Cambridge, MA</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sticky Mobile Action Bar -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-brand-dark/95 backdrop-blur border-t border-brand-gold/30 px-4 py-3 flex items-center justify-between gap-3 shadow-2xl">
+    <a href="tel:6178688339" class="flex-1 py-3 rounded bg-brand-gold text-brand-navy text-center font-bold text-xs uppercase tracking-wider shadow">
+      <i class="fa-solid fa-phone mr-1"></i> Call (617) 868-8339
+    </a>
+    <a href="https://maps.google.com/?q=Jack's+Tailoring+1937+Massachusetts+Ave+Cambridge+MA" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 rounded bg-brand-navy border border-brand-gold/50 text-brand-gold text-center font-bold text-xs uppercase tracking-wider">
+      <i class="fa-solid fa-diamond-turn-right mr-1"></i> Directions
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy border-t border-white/10 pt-16 pb-24 md:pb-16 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand Summary -->
+        <div class="md:col-span-2 space-y-4">
+          <span class="font-serif text-2xl font-bold tracking-wider text-white">JACK’S TAILORING</span>
+          <p class="text-slate-400 max-w-sm text-xs leading-relaxed">
+            Porter Square's premier master tailor and full-service alteration atelier since 1986. Specializing in bespoke suiting, fine bridal garments, leather jacket restoration, and eco-friendly dry cleaning.
+          </p>
+          <p class="text-brand-gold text-xs italic">
+            “The man who measures you is the man who does the work.”
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-2">
+          <h5 class="text-white font-semibold uppercase tracking-wider text-xs mb-3">Navigation</h5>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-brand-gold transition">Our Services</a></li>
+            <li><a href="#craft" class="hover:text-brand-gold transition">The Craft & Standards</a></li>
+            <li><a href="#about" class="hover:text-brand-gold transition">About Jack Papazian</a></li>
+            <li><a href="#reviews" class="hover:text-brand-gold transition">Client Testimonials</a></li>
+            <li><a href="#booking" class="hover:text-brand-gold transition">Request a Fitting</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div class="space-y-2">
+          <h5 class="text-white font-semibold uppercase tracking-wider text-xs mb-3">Shop Address</h5>
+          <p class="text-slate-300">1937 Massachusetts Ave<br />Cambridge, MA 02140</p>
+          <p class="text-white font-bold mt-2"><a href="tel:6178688339" class="hover:text-brand-gold transition">(617) 868-8339</a></p>
+          <p class="text-[11px] text-slate-400 mt-2">Mon–Fri: 9:00 AM – 6:00 PM</p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-slate-400 text-[11px] gap-4">
+        <div>
+          &copy; <span id="currentYear"></span> Jack's Tailoring & Dry Cleaning. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-4">
+          <span>Porter Square • Cambridge • Boston, MA</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Set Current Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on click
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Handle Form Submit
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const successToast = document.getElementById('formSuccess');
+      successToast.classList.remove('hidden');
+    }
+
+    function resetForm() {
+      document.getElementById('fittingForm').reset();
+      document.getElementById('formSuccess').classList.add('hidden');
+    }
+
+    // Dynamic Shop Open/Closed Status
+    (function updateOpenStatus() {
+      const badge = document.getElementById('liveStatusBadge');
+      if (!badge) return;
+      const now = new Date();
+      const day = now.getDay(); // 0 is Sunday, 6 is Saturday
+      const hour = now.getHours();
+
+      if (day >= 1 && day <= 5) {
+        if (hour >= 9 && hour < 18) {
+          badge.className = "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30";
+          badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span>Open Now until 6:00 PM</span>';
+        } else {
+          badge.className = "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30";
+          badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-400"></span><span>Opens at 9:00 AM</span>';
+        }
+      } else {
+        badge.className = "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-500/20 text-slate-300 border border-slate-500/30";
+        badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-slate-400"></span><span>Closed Weekend (Walk-in Mon 9AM)</span>';
+      }
+    })();
+  </script>
+
+</body>
+</html>
